@@ -1,0 +1,477 @@
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Circular Std;
+    margin: 0;
+    font-size: 1.5rem;
+    background: linear-gradient(228.76deg, rgba(45, 238, 249, 0.15) -34.42%, rgba(224, 132, 241, 0.15) 127.18%);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#wrapper {
+    max-width: 400px;
+    height: 810px;
+    margin: 3vh auto;
+    border: 10px solid rgba(0, 0, 0, 0.9);
+    border-bottom-width: 70px;
+    border-radius: 13.2px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(147.21deg, #EEECFF -8.91%, #FFFFFF 99.17%);
+    position: relative;
+    font-family: Circular Std;
+}
+
+header {
+    background: #f0cb45;
+    color: #fff;
+    padding: 12px 25px;
+    height: 140px;
+    background: linear-gradient(210.28deg, #FEB665 37.28%, #F66EB4 76.65%);
+    border-radius: 100% / 30%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    position: relative;
+    line-height: normal;
+    font-size: 13px;
+}
+
+header>div.status_bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_head a {
+    align-self: center;
+}
+
+.main_head .arrow_hide {
+    color: #f8b565;
+    opacity: 0;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    height: 50px;
+    width: 88.5%;
+    border-radius: 8px;
+    box-shadow: 5px 18px 35px rgba(71, 55, 255, 0.08);
+    position: absolute;
+    top: 78%;
+    right: 5.2%;
+    padding: 8px;
+}
+
+form img {
+    padding-left: 8px;
+}
+
+form input {
+    display: block;
+    border: 0;
+    padding-left: 8px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+}
+
+main {
+    padding: 12px 25px;
+    line-height: 1.4;
+}
+
+main h2 {
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(56, 79, 125, 0.8);
+}
+
+main .book {
+    background: #FFFFFF;
+    box-shadow: 4px 12px 25px rgba(71, 55, 255, 0.08);
+    border-radius: 8px;
+    margin: 14px 0;
+    display: flex;
+    padding: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+main .book:last-child {
+    margin-bottom: 0;
+}
+
+div.book .details {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 22px;
+}
+
+.details img {
+    align-self: flex-start;
+}
+
+hgroup,
+.details h3,
+.details h4 {
+    margin: 2px;
+}
+
+.details h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #384F7D;
+}
+
+.details h4 {
+    font-size: 14px;
+    line-height: normal;
+    color: #384f7dcc;
+}
+
+main a.add_review {
+    display: block;
+    background: linear-gradient(166.04deg, #BAFB67 -5.37%, #00D23A 196.64%);
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px #DDEBDC;
+    padding: 1.5em;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 100%;
+    outline: none;
+    position: relative;
+    top: -40px;
+
+}
+
+footer {
+    background: #FFFFFF;
+    box-shadow: 0px -3px 35px rgba(126, 151, 168, 0.16);
+    display: flex;
+    height: 60px;
+    width: 100%;
+    position: absolute;
+    /* top: 665px; */
+    bottom: 2px;
+}
+
+footer div.notify {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+footer div.notify img {
+    height: 65%;
+}
+
+footer div.notify h6 {
+    margin: -1px;
+    color: gray;
+    font-weight: normal;
+    font-size: 0.6em;
+}
+
+div.book_review {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+    top: -55px;
+}
+
+div.book_review img {
+    border-radius: 8px;
+}
+
+div.book_review .headings {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    margin-left: 22px;
+    margin-top: 28px;
+}
+
+div.headings h3 {
+    font-size: 18px;
+    line-height: normal;
+    color: #384F7D;
+    margin: 2px;
+}
+
+div.headings h4 {
+    font-size: 14px;
+    margin: 2px;
+    line-height: normal;
+    color: #384f7dcc;
+}
+
+div.book_review .review_points {
+    margin-top: 18px;
+}
+
+div.text {
+    font-size: 15px;
+    line-height: 22px;
+    color: rgba(56, 79, 125, 0.8);
+    position: relative;
+    top: -45px;
+}
+
+div.text h5 {
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    text-decoration-line: underline;
+    color: #384F7D;
+    font-size: 15px;
+}
+
+hr {
+    color: red;
+    margin-top: -28px;
+}
+
+div.rate {
+    margin-bottom: 65px;
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(56, 79, 125, 0.8);
+}
+
+.header {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 37px;
+}
+
+.header h1 {
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+    color: #384F7D;
+    margin-bottom: 3px;
+}
+
+.header p {
+    width: 270px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(56, 79, 125, 0.8);
+}
+
+div.related_books {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    bottom: -21px;
+}
+
+div.related_books h3 {
+    font-size: 12px;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(56, 79, 125, 0.8);
+}
+
+div.related_books .similar_books {
+    display: flex;
+    justify-content: space-between;
+}
+
+img.top_left {
+    position: absolute;
+    top: 55px;
+}
+
+img.top_right {
+    position: absolute;
+    top: 145px;
+    right: 35px;
+}
+
+div.merge_svg {
+    margin: -30% 22% 15px 15%;
+
+}
+
+.center.adjust {
+    margin: 0 22% 6px 30%;
+}
+
+img.big_bulb {
+    position: absolute;
+    top: 84px;
+    left: 160px;
+}
+
+div.centered {
+    text-align: center;
+    margin-bottom: 38px;
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
+div.centered h1 {
+    font-size: 32px;
+    line-height: normal;
+    text-align: center;
+    color: #384F7D;
+}
+
+div.centered p {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: rgba(56, 79, 125, 0.8);
+}
+
+div.nav_icon {
+    display: flex;
+    justify-content: space-around;
+}
+
+div.nav_icon+a {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+    text-decoration-line: underline;
+    font-weight: bold;
+    display: block;
+    margin-top: 32px;
+    color: #445984;
+}
+
+.home_icon {
+    position: absolute;
+    left: 42%;
+    bottom: -65px;
+}
+
+img.review_gradient {
+    position: absolute;
+    left: 9.87%;
+    right: 80%;
+    top: 11.95%;
+    bottom: 83.37%;
+}
+
+img.review_gradient2 {
+    position: absolute;
+    left: 54.67%;
+    right: 10.06%;
+    top: 0;
+    bottom: 89.74%;
+}
+
+div.merge_svg img.big_star {
+    position: absolute;
+    top: 235px;
+    left: 145px;
+}
+
+div.form {
+    width: 85%;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(68, 89, 132, 0.3);
+    margin: auto;
+}
+
+.form img {
+    position: absolute;
+    left: 82.13%;
+    right: 7.03%;
+    top: 47%;
+    bottom: 49.53%;
+}
+
+.form div {
+    position: relative;
+    margin-top: 20px;
+}
+
+.form input {
+    display: block;
+    border: 0;
+    border-bottom: 8px solid linear-gradient(166.04deg, #BAFB67 -5.37%, #00D23A 196.64%);
+    border-radius: 8px;
+    outline: none;
+    padding: 1.2em;
+    background: #FFFFFF;
+    width: 100%;
+    box-shadow: 4px 12px 25px rgba(71, 55, 255, 0.08);
+}
+
+h4.sign_in, h4.sign_in a {
+    font-size: 10px;
+    line-height: normal;
+    text-align: center;
+    color: #445984;
+    margin-top: -18px;
+}
+
+h4.sign_in a {
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+main a.sign_up {
+    width: 105%;
+    margin-top: 65px;
+    margin-left: -8px;
+}
+
+img.first, img.second, img.last {
+    display: block;
+    position: absolute;
+    left: 4px;
+    top: 60px;
+}
